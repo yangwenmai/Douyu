@@ -36,4 +36,3 @@ pom.xml (对应<douyu.version>那一行)
 
 assembly.bat 或
 mvn dependency:copy-dependencies
-
