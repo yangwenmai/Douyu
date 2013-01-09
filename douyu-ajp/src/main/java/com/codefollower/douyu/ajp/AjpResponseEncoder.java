@@ -39,7 +39,7 @@ public class AjpResponseEncoder implements ChannelDownstreamHandler {
 	 * If true, custom HTTP status messages will be used in headers.
 	 */
 	public static final boolean USE_CUSTOM_STATUS_MSG_IN_HEADER = Boolean.valueOf(
-			System.getProperty("org.douyu.ajp.USE_CUSTOM_STATUS_MSG_IN_HEADER", "false")).booleanValue();
+			System.getProperty("com.codefollower.douyu.ajp.USE_CUSTOM_STATUS_MSG_IN_HEADER", "false")).booleanValue();
 
 	private AjpMessage responsMessage = null;
 	private int packetSize = 8192;

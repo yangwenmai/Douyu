@@ -459,7 +459,7 @@ public class HttpRequestHandler extends SimpleChannelUpstreamHandler implements 
 	}
 
 	protected static final boolean ALLOW_BACKSLASH = Boolean.valueOf(
-			System.getProperty("org.douyu.http.ALLOW_BACKSLASH", "false")).booleanValue();
+			System.getProperty("com.codefollower.douyu.http.ALLOW_BACKSLASH", "false")).booleanValue();
 
 	public static boolean normalize(DouyuHttpRequest request) {
 		final char[] b = request.getRequestURI().toCharArray();

@@ -16,7 +16,7 @@
 
 /**
  * Adds support for read and write timeout and idle connection notification
- * using a {@link org.douyu.netty.util.Timer}.
+ * using a {@link com.codefollower.douyu.netty.util.Timer}.
  *
  * @apiviz.exclude \.channel\.
  * @apiviz.exclude \.DefaultIdleStateEvent$

@@ -43,16 +43,16 @@
   <!--                       比如JSP、Velocity、FreeMarker，                -->
   <!--                       Douyu内置了三个ViewManagerProvider,            -->
   <!--   默认值是:                                                          -->
-  <!--   org.douyu.plugins.jsp.JspViewManagerProvider=jsp|jspx;             -->
-  <!--   org.douyu.plugins.velocity.VelocityViewManagerProvider=vm;         -->
-  <!--   org.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl     -->
+  <!--   com.codefollower.douyu.plugins.jsp.JspViewManagerProvider=jsp|jspx;             -->
+  <!--   com.codefollower.douyu.plugins.velocity.VelocityViewManagerProvider=vm;         -->
+  <!--   com.codefollower.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl     -->
   <!--                                                                      -->
   <!--   格式: 类名=扩展名A|扩展名B; 类名=扩展名C|扩展名D                   -->
   <!--                                                                      -->
   <!--                                                                      -->
     <filter>
         <filter-name>Douyu Controller Filter</filter-name>
-        <filter-class>org.douyu.mvc.ControllerFilter</filter-class>
+        <filter-class>com.codefollower.douyu.mvc.ControllerFilter</filter-class>
 		<async-supported>true</async-supported>
 
 		<!-- 以下是配置样例 -->
@@ -80,9 +80,9 @@
 		<init-param>
             <param-name>viewManagerProviderConfig</param-name>
             <param-value>
-				org.douyu.plugins.jsp.JspViewManagerProvider=jsp|jspx;
-				org.douyu.plugins.velocity.VelocityViewManagerProvider=vm;
-				org.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl
+				com.codefollower.douyu.plugins.jsp.JspViewManagerProvider=jsp|jspx;
+				com.codefollower.douyu.plugins.velocity.VelocityViewManagerProvider=vm;
+				com.codefollower.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl
 			</param-value>
         </init-param>
     </filter>

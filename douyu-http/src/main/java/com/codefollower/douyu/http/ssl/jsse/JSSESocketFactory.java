@@ -86,7 +86,7 @@ public class JSSESocketFactory implements ServerSocketFactory, SSLUtil {
 	private static final InternalLogger log = InternalLoggerFactory.getInstance(JSSESocketFactory.class);
 
     private static final StringManager sm =
-        StringManager.getManager("org.douyu.http.ssl.jsse.res");
+        StringManager.getManager("com.codefollower.douyu.http.ssl.jsse.res");
 
     private static final boolean RFC_5746_SUPPORTED;
 

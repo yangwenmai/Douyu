@@ -152,7 +152,7 @@ public class Config {
 		return vmp;
 	}
 
-	// 如:"org.douyu.plugins.velocity.VelocityViewManagerProvider=vm; org.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl";
+	// 如:"com.codefollower.douyu.plugins.velocity.VelocityViewManagerProvider=vm; com.codefollower.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl";
 	public void setViewManagerProviderConfig(String viewManagerProviderConfig) {
 		if (viewManagerProviderConfig != null) {
 			for (String m : viewManagerProviderConfig.split(";")) {

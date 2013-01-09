@@ -38,7 +38,7 @@ public final class Constants {
     /**
      * Package name.
      */
-    public static final String Package = "org.douyu.ajp";
+    public static final String Package = "com.codefollower.douyu.ajp";
 
     public static final int DEFAULT_CONNECTION_LINGER = -1;
     public static final int DEFAULT_CONNECTION_TIMEOUT = -1;

@@ -160,7 +160,7 @@ public class ControllerProcessor extends AbstractProcessor {
 
 			String simpleName = e.getSimpleName().toString();
 			p.print("public class ").append(simpleName).append(SUFFIX).append(
-					" extends org.douyu.mvc.DouyuContext {");
+					" extends com.codefollower.douyu.mvc.DouyuContext {");
 			p.println();
 
 			p.tab++;

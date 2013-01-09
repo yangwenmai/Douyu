@@ -41,7 +41,7 @@ public class DebugUtil {
     public static boolean isDebugEnabled() {
         String value;
         try {
-            value = System.getProperty("org.douyu.logging.debug");
+            value = System.getProperty("com.codefollower.douyu.logging.debug");
         } catch (Exception e) {
             value = null;
         }

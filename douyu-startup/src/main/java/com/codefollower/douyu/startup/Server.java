@@ -61,8 +61,8 @@ public class Server {
 		return config;
 	}
 
-	private static final String viewManagerProviderConfig = "org.douyu.plugins.velocity.VelocityViewManagerProvider=vm;"
-			+ "org.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl;";
+	private static final String viewManagerProviderConfig = "com.codefollower.douyu.plugins.velocity.VelocityViewManagerProvider=vm;"
+			+ "com.codefollower.douyu.plugins.freemarker.FreeMarkerViewManagerProvider=ftl;";
 
 	public void init(String appName, String javacEncoding, String srcDir, String classesDir, boolean isDevMode,
 			String vmpConfig) throws Exception {

@@ -31,7 +31,7 @@ import com.codefollower.douyu.core.StringManager;
 public class HttpMessages {
     // XXX move message resources in this package
     protected static final StringManager sm =
-        StringManager.getManager("org.douyu.ajp");
+        StringManager.getManager("com.codefollower.douyu.ajp");
         
     static String st_200=null;
     static String st_302=null;
