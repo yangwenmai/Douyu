@@ -21,9 +21,8 @@
 import java.io.PrintWriter;
 import java.util.ResourceBundle;
 
+import douyu.examples.util.HTMLFilter;
 import douyu.http.HttpResponse;
-
-import util.HTMLFilter;
 
 /**
  * Example servlet showing request headers

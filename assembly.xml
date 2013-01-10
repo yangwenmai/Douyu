@@ -10,7 +10,7 @@
 	<moduleSets>
 		<moduleSet>
 			<includes>
-				<include>org.douyu:douyu-api</include>
+				<include>com.codefollower.douyu:douyu-api</include>
 			</includes>
 			<binaries>
 				<unpack>false</unpack>
@@ -26,7 +26,7 @@
 
 		<moduleSet>
 			<includes>
-				<include>org.douyu:douyu-javac</include>
+				<include>com.codefollower.douyu:douyu-javac</include>
 			</includes>
 			<binaries>
 				<unpack>false</unpack>
@@ -36,7 +36,7 @@
 						<useTransitiveFiltering>true</useTransitiveFiltering>
 						<useTransitiveDependencies>true</useTransitiveDependencies>
 						<excludes>
-							<exclude>org.douyu:douyu-api</exclude>
+							<exclude>com.codefollower.douyu:douyu-api</exclude>
 						</excludes>
 					</dependencySet>
 				</dependencySets>
@@ -45,7 +45,7 @@
 
 		<moduleSet>
 			<includes>
-				<include>org.douyu:douyu-core</include>
+				<include>com.codefollower.douyu:douyu-core</include>
 			</includes>
 			<binaries>
 				<unpack>false</unpack>
@@ -55,7 +55,7 @@
 						<useTransitiveFiltering>true</useTransitiveFiltering>
 						<useTransitiveDependencies>true</useTransitiveDependencies>
 						<excludes>
-							<exclude>org.douyu:douyu-javac</exclude>
+							<exclude>com.codefollower.douyu:douyu-javac</exclude>
 						</excludes>
 					</dependencySet>
 				</dependencySets>
@@ -64,7 +64,7 @@
 
 		<moduleSet>
 			<includes>
-				<include>org.douyu:douyu-mvc</include>
+				<include>com.codefollower.douyu:douyu-mvc</include>
 			</includes>
 			<binaries>
 				<unpack>false</unpack>
@@ -74,7 +74,7 @@
 						<useTransitiveFiltering>true</useTransitiveFiltering>
 						<useTransitiveDependencies>true</useTransitiveDependencies>
 						<excludes>
-							<exclude>org.douyu:douyu-core</exclude>
+							<exclude>com.codefollower.douyu:douyu-core</exclude>
 						</excludes>
 					</dependencySet>
 				</dependencySets>
@@ -83,7 +83,7 @@
 
 		<moduleSet>
 			<includes>
-				<include>org.douyu:douyu-plugins</include>
+				<include>com.codefollower.douyu:douyu-plugins</include>
 			</includes>
 			<binaries>
 				<unpack>false</unpack>
@@ -93,7 +93,7 @@
 						<useTransitiveFiltering>true</useTransitiveFiltering>
 						<useTransitiveDependencies>true</useTransitiveDependencies>
 						<excludes>
-							<exclude>org.douyu:douyu-api</exclude>
+							<exclude>com.codefollower.douyu:douyu-api</exclude>
 						</excludes>
 					</dependencySet>
 				</dependencySets>

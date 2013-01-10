@@ -51,7 +51,7 @@ public class Server {
 			c.start(config);
 	}
 
-	private Config config;
+	private Config config = new Config();
 
 	public ResourceLoader getResourceLoader() {
 		return config.getResourceLoader();
@@ -66,7 +66,6 @@ public class Server {
 
 	public void init(String appName, String javacEncoding, String srcDir, String classesDir, boolean isDevMode,
 			String vmpConfig) throws Exception {
-		config = new Config();
 		config.appName = appName;
 		config.javacEncoding = javacEncoding;
 		config.srcDir = srcDir;

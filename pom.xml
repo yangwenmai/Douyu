@@ -24,6 +24,7 @@
 		<module>douyu-netty</module>
 		<module>douyu-startup</module>
 		<module>douyu-logging</module>
+		<module>douyu-examples</module>
 	</modules>
 
 	<build>

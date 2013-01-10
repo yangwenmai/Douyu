@@ -285,7 +285,7 @@ public class HttpRequestHandler extends SimpleChannelUpstreamHandler implements 
 
 		// 以'/'结尾说明是一个目录
 		if (path.endsWith("/")) {
-			return; // TODO
+			return; // TODO 处理静态资源
 		}
 
 		// path格式: /packageName/controllerClassName.actionName
@@ -312,7 +312,7 @@ public class HttpRequestHandler extends SimpleChannelUpstreamHandler implements 
 		try {
 			cr = config.getResourceLoader().loadContextClassResource(controllerClassName, javacOut);
 			if (cr == null) {
-				return; // TODO
+				return; // TODO 处理静态资源
 			}
 			dc = (DouyuContext) cr.loadedClass.newInstance();
 			if (isWebSocket)

@@ -17,24 +17,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.codefollower.douyu.startup;
+package douyu.examples.models;
 
-public class Test {
-	public static void main(String[] args) throws Exception {
-		Server server = new Server();
-		Connector ajp = new AjpConnector();
-		Connector http = new HttpConnector();
-		// server.addConnectors(ajp, http);
+import douyu.mvc.Model;
 
-		server.addConnector(ajp);
-		server.addConnector(http);
+@Model
+public class MySubModel {
 
-		String srcDir = "E:\\Douyu\\trunk\\douyu-examples\\WEB-INF\\src";
-		String classesDir = "E:\\Douyu\\douyu-examples-classes";
-		server.init("myApp", "UTF-8", srcDir, classesDir, true, null);
+	private int f1;
+	private String f2;
+	private MyModel parentModel;
 
-		server.start();
+	public void set(int f1, String f2, MyModel parentModel) {
+		this.f1 = f1;
+		this.f2 = f2;
+		this.parentModel = parentModel;
+	}
 
-		System.out.println("http server started");
+	public MyModel getParentModel() {
+		return parentModel;
+	}
+
+	public String toString() {
+		return "MySubModel[f1=" + f1 + ", f2=" + f2 + "]";
 	}
 }
